@@ -9,12 +9,24 @@ function App() {
         <DictionaryForm />
         <footer>
           This project was coded by Anne Frenz and is
-          <a href="https://github.com/EnnaLeuark/Dictionary_project">
+          <a
+            href="https://github.com/EnnaLeuark/Dictionary_project"
+            target="_blank"
+            rel="noopener"
+          >
             {" "}
             open-sourced on GitHub
           </a>{" "}
           and hosted on
-          <a href="https://nervous-heyrovsky-3c2045.netlify.app/"> Netlify</a> .
+          <a
+            href="https://nervous-heyrovsky-3c2045.netlify.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            {" "}
+            Netlify
+          </a>{" "}
+          .
         </footer>
       </div>
     </div>
