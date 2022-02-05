@@ -1,5 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function DictionaryForm() {
-  return <div className="DicForm">"Here will be a dictionary soon""</div>;
+  let [keyword, setKeyword] = useState("");
+
+  function search(event) {
+    event.preventDefault();
+    alert(`searching for ${keyword}`);
+  }
+
+  function handleKeywordChange(event) {
+    setKeyword(event.target.value);
+  }
+
+  return (
+    <div className="DictionaryForm">
+      <form onSubmit={search}>
+        <input type="search" onChange={handleKeywordChange}></input>
+        <button>Search</button>
+      </form>
+    </div>
+  );
 }
