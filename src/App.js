@@ -12,7 +12,7 @@ function App() {
           <a
             href="https://github.com/EnnaLeuark/Dictionary_project"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             {" "}
             open-sourced on GitHub
@@ -21,7 +21,7 @@ function App() {
           <a
             href="https://nervous-heyrovsky-3c2045.netlify.app/"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             {" "}
             Netlify
