@@ -1,5 +1,5 @@
 import React from "react";
-import symbol from "./images/audio-symbol.png";
+
 import "./Phonetics.css";
 import ReactAudioPlayer from "react-audio-player";
 
