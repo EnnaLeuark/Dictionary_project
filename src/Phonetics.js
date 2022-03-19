@@ -1,23 +1,37 @@
 import React from "react";
-
 import "./Phonetics.css";
-import ReactAudioPlayer from "react-audio-player";
+import symbol from "./images/audio-symbol.png";
+// import ReactAudioPlayer from "react-audio-player"; // Variante Audio Player
 
 export default function Phonetics(props) {
   console.log(props.phonetics);
 
-  return (
-    <div>
-      <p>
-        {/* <img src={symbol} alt="audioSymbol" /> */}
-        {props.phonetics.text}`
-        <br />
-        <ReactAudioPlayer
-          src="https://api.dictionaryapi.dev/media/pronunciations/en/sunset-us.mp3"
-          autoPlay
-          controls
-        />{" "}
-      </p>
-    </div>
-  );
+  function playSound() {
+    const audio = document.getElementById("audio");
+    audio.load();
+    audio.play();
+  }
+
+  if (props.phonetics.audio) {
+    return (
+      <div>
+        <audio id="audio">
+          <source src={props.phonetics.audio} type="audio/mp3" />
+        </audio>
+        <button onClick={playSound}>
+          <img src={symbol} alt="audioSymbol" /> {props.phonetics.text}`
+        </button>
+      </div>
+    );
+  } else {
+    return null;
+  }
+
+  {
+    /* <img src={symbol} alt="audioSymbol" /> */
+  }
+
+  {
+    /* <ReactAudioPlayer src={props.phonetics.audio} controls />{" "} */
+  }
 }
