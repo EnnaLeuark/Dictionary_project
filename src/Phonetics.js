@@ -26,12 +26,4 @@ export default function Phonetics(props) {
   } else {
     return null;
   }
-
-  {
-    /* <img src={symbol} alt="audioSymbol" /> */
-  }
-
-  {
-    /* <ReactAudioPlayer src={props.phonetics.audio} controls />{" "} */
-  }
 }
